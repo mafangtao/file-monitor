@@ -52,7 +52,7 @@ jobs:
           password: ${{ secrets.SMTP_PASSWORD }}
           subject: "Dockerfile updated!"
           to: fangtaoma@gmail.com
-          from: Dockerfile Monitor <your@email.com>
+          from: Dockerfile Monitor <fangtaoma@gmail.com>
           body: |
             The file https://github.com/base/node/blob/main/geth/Dockerfile has changed.
             Latest SHA: ${{ steps.get_commit.outputs.sha }}
